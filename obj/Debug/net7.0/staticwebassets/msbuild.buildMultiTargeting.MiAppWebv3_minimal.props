@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MiAppWebv3_minimal.props" />
+</Project>
