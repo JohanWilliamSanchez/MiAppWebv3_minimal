@@ -16,3 +16,13 @@ steps:
 
 - script: |
     pwd
+- script: |
+    dotnet sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.token="$(TOKEN_SONAR)"
+  displayName: 'Sonarqube Begin'
+- script: |
+    dotnet build
+  displayName: 'Build'
+- script: |
+    dotnet sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
+  displayName: 'Sonarqube End'
+
