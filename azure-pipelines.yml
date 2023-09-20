@@ -16,6 +16,7 @@ steps:
 
 - script: |
     pwd
+    dotnet --version
 - script: |
     dotnet sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube Begin'
