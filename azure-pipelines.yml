@@ -17,7 +17,6 @@ steps:
 - script: |
     pwd
     dotnet --version
-    sudo docker ps
 - script: |
     dotnet-sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.host.url="http://localhost:5155/" /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube Begin'
