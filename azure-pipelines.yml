@@ -21,7 +21,7 @@ steps:
     echo $JAVA_HOME
     echo $PATH
 - script: |
-    dotnet-sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.host.url="http://192.168.156.20:5155/" /d:sonar.token="$(TOKEN_SONAR)" /d:sonar.java.binaries=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+    dotnet-sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.host.url="http://192.168.156.20:5155/" /d:sonar.token="$(TOKEN_SONAR)" /d:sonar.java.binaries=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.el7_9.x86_64/jre/bin/java
   displayName: 'Sonarqube Begin'
 - script: |
     dotnet build
