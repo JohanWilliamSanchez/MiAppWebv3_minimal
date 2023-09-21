@@ -17,7 +17,7 @@ steps:
 - script: |
     pwd
     dotnet --version
-    java --version
+    java -version
 - script: |
     dotnet-sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.host.url="http://192.168.156.20:5155/" /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube Begin'
