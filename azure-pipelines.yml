@@ -12,11 +12,7 @@ pool:
   - agent.name -equals devops
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
+
 - script: echo Hello, world in new Agent!
 
 - script: |
