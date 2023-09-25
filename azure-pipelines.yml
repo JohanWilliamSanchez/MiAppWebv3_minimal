@@ -28,7 +28,7 @@ steps:
     dotnet build
   displayName: 'Build'
 - script: |
-    export JAVA_HOME= "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.el7_9.x86_64/jre/"
+    export JAVA_HOME= "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.el7_9.x86_64/jre"
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
 
