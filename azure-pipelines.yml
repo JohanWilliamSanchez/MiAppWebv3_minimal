@@ -45,4 +45,6 @@ steps:
     java -version
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
-
+- script: | 
+    docker-compose --version
+  displayName: 'Docker deploy'
