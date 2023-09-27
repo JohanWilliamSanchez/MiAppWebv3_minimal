@@ -16,13 +16,13 @@ steps:
 - script: |
     echo Hello, world in new Agent!
     ls /tmp/pruebadocker/
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: "11"
-    jdkArchitectureOption: x64
-    jdkSourceOption: LocalDirectory
-    jdkFile: "/tmp/pruebadocker/openlogic-openjdk-jre-11.0.20+8-linux-x64.tar.gz"
-    cleanDestinationDirectory: true
+# - task: JavaToolInstaller@0
+#   inputs:
+#     versionSpec: "11"
+#     jdkArchitectureOption: x64
+#     jdkSourceOption: LocalDirectory
+#     jdkFile: "/tmp/pruebadocker/openlogic-openjdk-jre-11.0.20+8-linux-x64.tar.gz"
+#     cleanDestinationDirectory: true
 
 - script: |
     pwd
