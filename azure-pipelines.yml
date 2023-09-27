@@ -41,6 +41,7 @@ steps:
     dotnet build
   displayName: 'Build'
 - script: | 
+    export JAVA_HOME = "/tmp/pruebadocker/openlogic-openjdk-jre-11.0.20+8-linux-x64"
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
 
