@@ -38,6 +38,7 @@ steps:
 - script: |
     ls -ltr
     pwd
+    dotnet restore
     dotnet build
   displayName: 'Build'
 - script: | 
