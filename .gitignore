@@ -1,0 +1,5 @@
+# Ignorar la carpeta bin
+bin/
+
+# Ignorar la carpeta out
+out/
