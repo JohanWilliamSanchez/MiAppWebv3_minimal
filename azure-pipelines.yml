@@ -40,12 +40,18 @@ steps:
     pwd
     dotnet restore
     dotnet build
-  displayName: 'Build'
+  displayName: 'Build .Net'
 - script: | 
     export JAVA_HOME="/tmp/pruebadocker/openlogic-openjdk-jre-11.0.20+8-linux-x64"
     java -version
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
+
+- script: | 
+    dotnet test
+  displayName: 'Unit Test'  
+  
+
 - script: | 
     docker stop webappnet || true
     docker rm webappnet || true
