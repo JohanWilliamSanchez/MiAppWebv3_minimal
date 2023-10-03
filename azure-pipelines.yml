@@ -47,6 +47,15 @@ steps:
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
 
+# Nueva tarea para verificar la calidad de la puerta
+- powershell: |
+    $status = $build.properties['sonarQube.qualityGate.status']
+    if ($status -eq 'FAILED') {
+      Write-Host "SonarQube Quality Gate Failed."
+      exit 1
+    } 
+  displayName: 'Verificar calidad de la puerta SonarQube'
+
 - script: | 
     dotnet test
   displayName: 'Unit Test'  
