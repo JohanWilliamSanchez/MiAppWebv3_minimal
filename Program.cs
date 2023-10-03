@@ -26,9 +26,10 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 });
 app.MapGet("/helloworld", () => { return "Hello World .NET 🌚";});
-app.Run();
+app.Run("http://*:5154"); // Configura el puerto 5154
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+g
