@@ -47,5 +47,8 @@ steps:
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
 - script: | 
-    docker-compose --version
+    docker stop webappnet || true
+    docker rm webappnet || true
+    docker build -t dotnetcoreapp .
+    docker run -d -p 5154:5154 --name webappnet dotnetcoreapp
   displayName: 'Docker deploy'
