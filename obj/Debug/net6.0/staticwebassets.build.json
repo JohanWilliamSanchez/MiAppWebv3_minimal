@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3WaRwcLwI2DkFkQaFFnKqjRQGob+UWDLWnuGCfy/YPo=",
+  "Source": "MiAppWebv3_minimal",
+  "BasePath": "_content/MiAppWebv3_minimal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

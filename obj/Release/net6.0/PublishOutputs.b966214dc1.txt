@@ -1,0 +1,12 @@
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\MiAppWebv3_minimal.exe
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\out\web.config
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\appsettings.Development.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\appsettings.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\out\appsettings.Development.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\out\appsettings.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\out\MiAppWebv3_minimal.deps.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\out\MiAppWebv3_minimal.runtimeconfig.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\MiAppWebv3_minimal.dll
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\MiAppWebv3_minimal.deps.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\MiAppWebv3_minimal.runtimeconfig.json
+C:\Users\johan\Documents\Programar\docker\MiAppWebv3_minimal\out\MiAppWebv3_minimal.pdb

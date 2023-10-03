@@ -1,0 +1,7 @@
+C:\out\MiAppWebv3_minimal.exe
+C:\out\appsettings.Development.json
+C:\out\appsettings.json
+C:\out\MiAppWebv3_minimal.dll
+C:\out\MiAppWebv3_minimal.deps.json
+C:\out\MiAppWebv3_minimal.runtimeconfig.json
+C:\out\MiAppWebv3_minimal.pdb

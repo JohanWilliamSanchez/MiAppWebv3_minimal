@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johsanchez\\OneDrive - Heinsohn Business Technology\\Documentos\\repositorio local\\sin sincronizar\\progrmas .net\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj": {}
+    "C:\\Users\\johan\\Documents\\Programar\\docker\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johsanchez\\OneDrive - Heinsohn Business Technology\\Documentos\\repositorio local\\sin sincronizar\\progrmas .net\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj": {
+    "C:\\Users\\johan\\Documents\\Programar\\docker\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johsanchez\\OneDrive - Heinsohn Business Technology\\Documentos\\repositorio local\\sin sincronizar\\progrmas .net\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj",
+        "projectUniqueName": "C:\\Users\\johan\\Documents\\Programar\\docker\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj",
         "projectName": "MiAppWebv3_minimal",
-        "projectPath": "C:\\Users\\johsanchez\\OneDrive - Heinsohn Business Technology\\Documentos\\repositorio local\\sin sincronizar\\progrmas .net\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj",
-        "packagesPath": "C:\\Users\\johsanchez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johsanchez\\OneDrive - Heinsohn Business Technology\\Documentos\\repositorio local\\sin sincronizar\\progrmas .net\\MiAppWebv3_minimal\\obj\\",
+        "projectPath": "C:\\Users\\johan\\Documents\\Programar\\docker\\MiAppWebv3_minimal\\MiAppWebv3_minimal.csproj",
+        "packagesPath": "C:\\Users\\johan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johan\\Documents\\Programar\\docker\\MiAppWebv3_minimal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\johsanchez\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\johan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -36,8 +36,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
         }
       }
     }
