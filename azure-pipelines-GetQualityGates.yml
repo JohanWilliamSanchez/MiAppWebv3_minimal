@@ -24,6 +24,10 @@ steps:
     projectKey: 'analisis2'
     projectName: 'analisis2'
     extraProperties: 'sonar.coverage.exclusions=**/Program.cs sonar.exclusions=**\Dockerfile'
+
+    # Dotnet build task
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
 - task: SonarQubeAnalyze@5
   inputs:
     jdkversion: 'JAVA_HOME_11_X64'
