@@ -1,0 +1,41 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  name: test
+  demands:
+  - agent.name -equals devops
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sonarqube_test2'
+    scannerMode: 'MSBuild'
+    projectKey: 'analisis2'
+    projectName: 'analisis2'
+    extraProperties: 'sonar.coverage.exclusions=**/Program.cs sonar.exclusions=**\Dockerfile'
+- task: SonarQubeAnalyze@5
+  inputs:
+    jdkversion: 'JAVA_HOME_11_X64'
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
+
+- script: |
+    if [ "$(Build.Quality)" == "Failed" ]; then
+      echo "SonarQube Quality Gate Failed. Build.Quality: $(Build.Quality)"
+      exit 1  # Termina el pipeline con un estado de error
+    else
+      echo "SonarQube Quality Gate Passed. Build.Quality: $(Build.Quality)"
+    fi
+  displayName: 'Verificar calidad de la puerta SonarQube'
