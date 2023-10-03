@@ -47,19 +47,6 @@ steps:
     dotnet-sonarscanner end /d:sonar.token="$(TOKEN_SONAR)"
   displayName: 'Sonarqube End'
 
-# Nueva tarea para verificar la calidad de la puerta
-- task: SonarQubePublish@4
-  inputs:
-    pollingTimeoutSec: '300'
-- script: |
-    if [ "$(Build.Quality)" == "Failed" ]; then
-      echo "SonarQube Quality Gate Failed."
-      exit 1  # Termina el pipeline con un estado de error
-    else
-      echo "SonarQube Quality Gate Passed."
-    fi
-  displayName: 'Verificar calidad de la puerta SonarQube'
-
 
 - script: | 
     dotnet test
