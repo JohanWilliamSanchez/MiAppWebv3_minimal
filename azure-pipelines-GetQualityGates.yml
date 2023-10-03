@@ -28,9 +28,13 @@ steps:
     # Dotnet build task
 - task: DotNetCoreCLI@2
   displayName: 'dotnet build'
+
+- script: export JAVA_HOME="/tmp/pruebadocker/openlogic-openjdk-jre-11.0.20+8-linux-x64"
+
+
 - task: SonarQubeAnalyze@5
   inputs:
-    jdkversion: 'JAVA_HOME_11_X64'
+    jdkversion: 'JAVA_HOME'
 - task: SonarQubePublish@5
   inputs:
     pollingTimeoutSec: '300'
