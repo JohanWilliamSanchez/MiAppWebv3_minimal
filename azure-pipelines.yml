@@ -33,7 +33,7 @@ steps:
     echo $JAVA_HOME
     echo $PATH
 - script: |
-    dotnet-sonarscanner begin /k:"MiAppWebv3_minimal" /d:sonar.host.url="http://192.168.156.20:5155/" /d:sonar.token="$(TOKEN_SONAR)" /d:sonar.coverage.exclusions=**/Program.cs /d:sonar.exclusions=**\Dockerfile
+    dotnet-sonarscanner begin /k:"MiAppWebv3_minimalv2" /d:sonar.host.url="http://192.168.156.20:5155/" /d:sonar.token="$(TOKEN_SONAR)" /d:sonar.coverage.exclusions=**/Program.cs /d:sonar.exclusions=**\Dockerfile
   displayName: 'Sonarqube Begin'
 - script: |
     ls -ltr
