@@ -25,7 +25,7 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 });
-app.MapGet("/helloworld", () => { return "Hello World .NET desplegado con Docker 🌚 v4.0";});
+app.MapGet("/helloworld", () => { return "Hello World .NET desplegado con Docker 🌚 v5.0";});
 app.Run("http://*:5154"); // Configura el puerto 5154
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
